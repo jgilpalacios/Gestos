@@ -31,8 +31,12 @@ var app={
     zona.addEventListener('webkitAnimationEnd',function(e){
       zona.className='';
     });
+
+    hammertime.on('tap', function(ev) {
+      zona.className='tap';
+    });
     
-     hammertime.on('doubletap', function(ev) {
+    hammertime.on('doubletap', function(ev) {
       zona.className='doubletap';
     });
 
@@ -63,7 +67,8 @@ var app={
   },
 
   ponloOscuro: function(){
-    document.body.className = 'oscuro';
+    //document.body.className = 'oscuro';
+    document.body.className = 'oscuroprogresivo';
   },
 
 };
