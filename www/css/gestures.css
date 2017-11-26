@@ -57,7 +57,7 @@ button{
   color: #ffffff;
   font-size: 2em;
   margin-top: 10px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
 }
 
 #zona-gestos.doubletap{
@@ -76,8 +76,12 @@ button{
     -webkit-animation: swipe-izquierda 3s 1;
 }
 
-#zona-gestos.rotate{
-    -webkit-animation: rotate 3s 1;
+#zona-gestos.rotateder{
+    -webkit-animation: rotateder 3s 1;
+}
+
+#zona-gestos.rotateiz{
+    -webkit-animation: rotateiz 3s 1;
 }
 
 #zona-gestos.tap{
@@ -130,8 +134,13 @@ button{
   }
 }
 
-@-webkit-keyframes rotate { 
+@-webkit-keyframes rotateder { 
   100% { 
     -webkit-transform: rotate(360deg);
+  } 
+}
+@-webkit-keyframes rotateiz { 
+  100% { 
+    -webkit-transform: rotate(-360deg);
   } 
 }
