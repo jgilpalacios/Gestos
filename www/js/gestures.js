@@ -58,8 +58,8 @@ var app={
     hammertime.on('rotate', function(ev) {
       var umbral=25;
       if (ev.distance > umbral) {
-          if(ev.eventtype==2) zona.className='rotateder';
-          if(ev.eventtype==4) zona.className='rotateiz';
+          if(ev.eventType==2) zona.className='rotateder';
+          if(ev.eventType==4) zona.className='rotateiz';
           document.querySelector('#info').innerHTML=JSON.stringify(ev);
       }
     });
