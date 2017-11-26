@@ -60,7 +60,7 @@ var app={
       if (ev.distance > umbral) {
           if(ev.eventType==2) zona.className='rotateder';
           if(ev.eventType==4) zona.className='rotateiz';
-          document.querySelector('#info').innerHTML=JSON.stringify(ev);
+          document.querySelector('#info').innerHTML=ev.angle+'<br>'+ev.rotation;
       }
     });
   },
