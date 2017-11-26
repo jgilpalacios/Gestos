@@ -15,6 +15,10 @@ var app={
     
     botonClaro.addEventListener('click',this.ponloClaro,false);
     botonOscuro.addEventListener('click',app.ponloOscuro,false);
+
+    document.body.addEventListener('webkitAnimationEnd',function(e){
+      document.body.className='';
+    });
   },
 
   iniciaHammer: function() {
@@ -54,7 +58,8 @@ var app={
   },
 
   ponloClaro: function(){
-    document.body.className = 'claro';
+    //document.body.className = 'claro';
+    document.body.className = 'claroprogresivo';
   },
 
   ponloOscuro: function(){
