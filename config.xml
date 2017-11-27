@@ -8,5 +8,14 @@
         devscola
     </author>
     <content src="index.html" />
+    <icon src="icon.png"/>
+    <icon src="www/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
+    <icon src="www/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
+    <icon src="www/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi"/>
+    <icon src="www/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi"/>
+    <icon src="www/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
+    <icon src="www/icon/windows-phone/icon-62-tile.png" gap:platform="winphone"/>
+    <icon src="www/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
     <access origin="*" />
 </widget>
+
